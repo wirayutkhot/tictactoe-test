@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+TIC TAC TOE  by NEXT.js 14 and Node.js 18+ and MongoDB
 
-## Getting Started
+การใช้งานโปรแกรม
+1. การดาวน์โหลดโค้ดโปรแกรม
+   [git clone https://github.com/username/repository.git](https://github.com/wirayutkhot/tictactoe-test.git)
 
-First, run the development server:
+2. ติดตั้ง dependencies ด้วย npm 
+   npm install
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. รันโปรแกรม
+   npm run dev
+   เซิร์ฟเวอร์จะเริ่มทำงานที่ http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+คู่มือการใช้งานเกม
+1. เข้าสู่ระบบ:
+    คลิกที่ปุ่ม "Login to play" บนหน้าแรกและเข้าสู่ระบบด้วย Google
+   
+2. เริ่มเกม:
+    หลังจากล็อกอินสำเร็จ ระบบจะพาคุณไปยังหน้าเกมโดยอัตโนมัติ และเริ่มเล่นเกมได้ทันที
+   
+3. กฎกติกาการเล่น
+    วิธีการเล่น:
+        เกมนี้เล่นระหว่างผู้เล่น (คุณ) กับบอท
+        ผู้เล่นจะทำการวางสัญลักษณ์ 'X' และบอทจะวางสัญลักษณ์ 'O'
+        เป้าหมายคือการทำให้ได้สามสัญลักษณ์เรียงกันในแนวนอน แนวตั้ง หรือแนวทแยง
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    การชนะ:
+        หากผู้เล่นทำได้สามสัญลักษณ์เรียงกันก่อนบอท คุณจะเป็นฝ่ายชนะ
+        หากบอททำได้ก่อน คุณจะเป็นฝ่ายแพ้
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. ระบบคะแนน
+    การเก็บคะแนน:
+        การชนะ: คุณจะได้รับ 1 คะแนน
+        การแพ้: คุณจะเสีย 1 คะแนน
+        หากคุณชนะบอทได้ 3 ครั้งติดต่อกัน คุณจะได้รับคะแนนพิเศษ 1 คะแนน
 
-## Learn More
+5. ตรวจสอบคะแนน
+    การดูคะแนน:
+        คลิกที่ปุ่ม "View Scoreboard" บนหน้าเกม (ด้านใต้กระดานเกม)
+        หน้านี้จะแสดงคะแนนของผู้เล่นทั้งหมดในระบบ
+        คุณสามารถดูชื่อผู้เล่น คะแนน และจำนวนครั้งที่ชนะติดต่อกัน
 
-To learn more about Next.js, take a look at the following resources:
+6. ปิดเกม
+    การออกจากเกม:
+        หากต้องการออกจากเกม ให้คลิกที่ปุ่ม "Logout" เพื่อออกจากระบบ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

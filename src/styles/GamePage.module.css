@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+  }
+  
+  .cell {
+    width: 150px;
+    height: 150px;
+    background-color: #8ec095;
+    border: 2px solid #6f00ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .x {
+    color: blue; /* สีน้ำเงินสำหรับ X */
+  }
+
+  .o {
+      color: red; /* แดงสำหรับ O */
+  }
