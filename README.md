@@ -1,13 +1,12 @@
 TIC TAC TOE  by NEXT.js 14 and Node.js 18+ and MongoDB
 
 การใช้งานโปรแกรม
-1. การดาวน์โหลดโค้ดโปรแกรม
+1. ดาวน์โหลดโค้ดโปรแกรม
    [git clone https://github.com/username/repository.git](https://github.com/wirayutkhot/tictactoe-test.git)
 
-2. ติดตั้ง dependencies ด้วย npm 
-   npm install
+2. ติดตั้ง dependencies ด้วยคำสั่ง npm install
 
-3. รันโปรแกรม
+3. รันโปรแกรมด้วยคำสั่ง
    npm run dev
    เซิร์ฟเวอร์จะเริ่มทำงานที่ http://localhost:3000
 
